@@ -1,0 +1,363 @@
+:root {
+    --bg-primary: #0a0b10;
+    --bg-secondary: #141622;
+    --accent-color: #e50914; 
+    --accent-glow: rgba(229, 9, 20, 0.4);
+    --text-main: #f1f1f1;
+    --text-muted: #9ba1a6;
+    --font-main: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--bg-primary);
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+
+.hero {
+    background: linear-gradient(rgba(10, 11, 16, 0.8), rgba(10, 11, 16, 0.95)), 
+                radial-gradient(circle at top right, #2b1016, transparent 50%);
+    padding: 2rem 5% 4rem 5%;
+    border-bottom: 1px solid #222;
+}
+
+.navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto 4rem auto;
+}
+
+.marca {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--text-main);
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.marca span {
+    color: var(--accent-color);
+    margin: 0 4px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.menu a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: var(--accent-color);
+}
+
+.hero-contenido {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.etiqueta {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    color: var(--accent-color);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+}
+
+h1 em {
+    font-style: normal;
+    color: var(--accent-color);
+    text-shadow: 0 0 20px var(--accent-glow);
+}
+
+.hero-descripcion {
+    font-size: 1.15rem;
+    color: var(--text-muted);
+    margin-bottom: 2.5rem;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Botones */
+.boton {
+    display: inline-block;
+    padding: 0.85rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.boton-principal {
+    background-color: var(--accent-color);
+    color: white;
+    box-shadow: 0 4px 15px var(--accent-glow);
+}
+
+.boton-principal:hover {
+    background-color: #ff1e26;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px var(--accent-glow);
+}
+
+.boton-secundario {
+    background-color: transparent;
+    border: 2px solid var(--text-muted);
+    color: var(--text-main);
+}
+
+.boton-secundario:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
+
+
+.hero-datos {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 3rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 2rem;
+}
+
+.dato {
+    text-align: center;
+}
+
+.dato strong {
+    display: block;
+    font-size: 2rem;
+    color: var(--text-main);
+    font-weight: 800;
+}
+
+.dato span {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 4rem 5%;
+}
+
+section {
+    margin-bottom: 5rem;
+}
+
+.introduccion {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 6rem auto;
+}
+
+.introduccion h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.introduccion p {
+    color: var(--text-muted);
+    margin-bottom: 1.2rem;
+    font-size: 1.05rem;
+}
+
+
+.banda {
+    background: var(--bg-secondary);
+    border-radius: 16px;
+    padding: 3rem;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    margin-bottom: 3rem;
+}
+
+.banda-indice {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    font-size: 4rem;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.03);
+    pointer-events: none;
+}
+
+.banda h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.banda-resumen {
+    font-size: 1.15rem;
+    color: var(--text-main);
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.banda p {
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+}
+
+
+.ficha-banda {
+    list-style: none;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    border-left: 4px solid var(--accent-color);
+}
+
+.ficha-banda li {
+    margin-bottom: 0.5rem;
+    color: var(--text-muted);
+}
+
+.ficha-banda li strong {
+    color: var(--text-main);
+}
+
+
+.legado {
+    margin-top: 6rem;
+}
+
+.legado-encabezado {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.legado-encabezado h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.linea-tiempo {
+    list-style: none;
+    border-left: 2px solid rgba(255, 255, 255, 0.1);
+    padding-left: 2rem;
+    margin-left: 1rem;
+}
+
+.linea-tiempo li {
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.linea-tiempo li::before {
+    content: '';
+    position: absolute;
+    left: -2.39rem;
+    top: 0.3rem;
+    width: 12px;
+    height: 12px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--accent-glow);
+}
+
+.linea-tiempo time {
+    font-size: 0.85rem;
+    color: var(--accent-color);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.linea-tiempo h3 {
+    font-size: 1.3rem;
+    margin: 0.3rem 0 0.5rem 0;
+}
+
+.linea-tiempo p {
+    color: var(--text-muted);
+}
+
+
+.frase-final {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(to top, var(--bg-secondary), transparent);
+    border-radius: 16px;
+    margin-top: 4rem;
+}
+
+blockquote {
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 400;
+    max-width: 700px;
+    margin: 0 auto 1.5rem auto;
+    color: var(--text-main);
+}
+
+.frase-final p {
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+}
+
+footer {
+    text-align: center;
+    padding: 2.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+
+@media (max-width: 768px) {
+    .menu {
+        display: none; 
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-datos {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .banda {
+        padding: 1.5rem;
+    }
+}
